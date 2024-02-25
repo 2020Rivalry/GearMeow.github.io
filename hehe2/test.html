@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="uft-8">
+        <title>test1</title>
+    </head>
+
+    <body>
+        <button id="btn" >抽</button>
+
+        <div id="videoBox">
+            <video id="drawVideo"></video>
+        </div>
+
+        <script>
+            var btn = document.getElementById('btn');
+            var playVideo = document.getElementById('drawVideo');
+
+            btn.addEventListener('click', function(){
+                window.alert("haha");
+                playVideo.setAttribute('src','image/gachaVideo.mp4');
+                playVideo.setAttribute('width','90%');
+                playVideo.setAttribute('autoplay','true');
+                playVideo.setAttribute('controls');
+            }, false);
+        </script>
+    </body>
+</html>
