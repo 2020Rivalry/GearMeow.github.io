@@ -362,7 +362,7 @@ $('#gacha1').on('click', function(){
         $('#rstImg').attr({src:'image/DONE/LIGHTSPEED.png'});
     }
     else if(drawNum<28){
-        rstName.textContent ='Logitech G G515 TKL 黑';
+        rstName.textContent ='Logitech G G515 有線鍵盤 TKL 黑';
         $('#rstImg').attr({src:'image/DONE/TKL.png'});
     }
     else if(drawNum<40){
@@ -436,7 +436,7 @@ $('#gacha10').on('click', function(){
             rstImg2.item(i).src= 'image/DONE/LIGHTSPEED.png';
         }
         else if(drawNum<28){
-            rstNameArray.item(i).textContent ='Logitech G G515 TKL 黑';
+            rstNameArray.item(i).textContent ='Logitech G G515 有線鍵盤 TKL 黑';
             rstImg2.item(i).src = 'image/DONE/TKL.png';
         }
         else if(drawNum<40){
