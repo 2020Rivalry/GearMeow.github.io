@@ -2,7 +2,7 @@ var listWidth;
 
 $(function(){
 
-    if(window.innerWidth<=1000){
+    if(window.innerWidth<=1024){
         listWidth = '100%';
     }
     else listWidth = '70%';
@@ -71,8 +71,10 @@ $(function(){
     });
 });
 
-    var playop = document.getElementById('openingvideo');
-    var opening = document.getElementById('opening');
+var playop = document.getElementById('openingvideo');
+var opening = document.getElementById('opening');
+if(window.innerWidth>1024){
+    
 
     function playopening(){
     var wid = window.innerWidth;
@@ -89,9 +91,17 @@ $(function(){
     playop.removeAttribute('autoplay','true');
     }
     playopening();
-    window.setTimeout('Offop()',4500);
-
-    
+    window.setTimeout('Offop()',4200);
+}
+else{
+    function Offop(){
+        opening.style.display = 'none';
+        playop.removeAttribute('src','image/opening.mp4');
+        playop.removeAttribute('width');
+        playop.removeAttribute('autoplay','true');
+        }
+    Offop();
+}
 
 //gear移動 0------------------------------------------------------------
 //隨機樣式
