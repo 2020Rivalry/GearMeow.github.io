@@ -89,7 +89,7 @@ $(function(){
     playop.removeAttribute('autoplay','true');
     }
     playopening();
-    window.setTimeout('Offop()',4200);
+    window.setTimeout('Offop()',4500);
 
     
 
