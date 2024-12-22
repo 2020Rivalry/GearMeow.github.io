@@ -71,6 +71,28 @@ $(function(){
     });
 });
 
+    var playop = document.getElementById('openingvideo');
+    var opening = document.getElementById('opening');
+
+    function playopening(){
+    var wid = window.innerWidth;
+    opening.style.display = 'block';
+    playop.setAttribute('width',wid);
+    playop.setAttribute('src','image/opening.mp4');
+    playop.setAttribute('autoplay','true');
+    }
+
+    function Offop(){
+    opening.style.display = 'none';
+    playop.removeAttribute('src','image/opening.mp4');
+    playop.removeAttribute('width');
+    playop.removeAttribute('autoplay','true');
+    }
+    playopening();
+    window.setTimeout('Offop()',4200);
+
+    
+
 //gear移動 0------------------------------------------------------------
 //隨機樣式
 var giftype = Math.floor(10*Math.random());
@@ -311,6 +333,9 @@ var videoBox = document.getElementById('videoBox');
 function playVdo(){
     var wid = window.innerWidth;
     videoBox.style.display = 'block';
+    videoBox.style.backgroundColor = 'black';
+    videoBox.style.width = '100vw';
+    videoBox.style.height = '100vh';
     playVideo.setAttribute('width',wid);
     playVideo.setAttribute('src','image/gachaVideo.mp4');
     playVideo.setAttribute('autoplay','true');
@@ -321,6 +346,7 @@ function OffVdo(){
     playVideo.removeAttribute('src','image/gachaVideo.mp4');
     playVideo.removeAttribute('width');
     playVideo.removeAttribute('autoplay','true');
+
 }
 
 
@@ -332,6 +358,8 @@ $('#gacha1').on('click', function(){
     var drawNum = Math.floor(100*Math.random());
     var rstName = document.getElementById('rstName');
     console.log(drawNum);
+
+
     playVdo();
     window.setTimeout('OffVdo()',6100);
 
