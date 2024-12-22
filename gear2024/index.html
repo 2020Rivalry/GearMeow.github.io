@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="uft-8">
+        <title>寄兒杯比2024年末抽獎</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="jquery-ui-1.13.2.custom/jquery-ui.css">
+    </head>
+
+    <body>
+        <div id="videoBox">
+            <video id="drawVideo"></video>
+        </div>
+        <div id="BBlock1"></div>
+        <div id="BBlock2"></div>
+        <div id="mainBody">
+            <img  id="gear0" class="gearr">
+            <img  id="gear1" class="gearr">
+            <img  id="gear2" class="gearr">
+            <img  id="gear3" class="gearr">
+            <img  id="gear4" class="gearr">
+            <!--<img src="image/padoru.png" id="gear1" class="gearr">-->
+            
+        <!--
+            <div id="shop">
+                <img id="dialog1">
+                <img id="shop2020" src="image/抓頭2.gif">
+        </div>
+        -->
+
+        <!--
+                <div id="stoneCount">
+                <p id="StoneCountNum"></p>
+            </div>
+
+        -->
+
+            <div class="imgBtn1">
+                <img id="prizeList" src="image/listbtn.png">
+                <div id="listBox" title="抽獎獎品一覽">
+                        <div id="innerBox">
+                            <div class="innerBox2">
+                                <p class="prizeName">iPhone 16 Pro Max 256GB</p>
+                                <div>
+                                    <a href="https://www.apple.com/tw/iphone-16-pro/?afid=p238%7CsHf1K51rC-dc_mtid_2092576n66464_pcrid_712905779455_pgrid_167437217019_pexid__ptid_kwd-828903335200_&cid=wwa-tw-kwgo-iphone-slid---productid--Core-iPhone16ProMax-Announce-" target="_blank">
+                                        <img class="prizeImg" id="imgP1">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="innerBox2">
+                                <p class="prizeName">PlayStation 5 Slim數位版 x2</p>
+                                <div>
+                                    <a href="https://store.sony.com.tw/product/show/ff8080818c60e4b0018c6c4adbe804d4" target="_blank">
+                                        <img class="prizeImg" id="imgP2">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="innerBox2">
+                                <p class="prizeName">Nintendo Switch OLED</p>
+                                <div>
+                                    <a href="https://www.nintendo.com/tw/hardware/detail/switch-oled/" target="_blank">
+                                        <img class="prizeImg" id="imgP3">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="innerBox2">
+                                <p class="prizeName">Logitech G Pro X SUPERLIGHT 白 x5</p>
+                                <div><a href="https://www.logitechg.com/zh-tw/products/gaming-mice/pro-x-superlight-wireless-mouse.910-005945.html?srsltid=AfmBOooNotRurk0mjfql30QUJvZIAHBfC-ycZLYXqCBABN1JHakzSvdF" target="_blank">
+                                    <img class="prizeImg" id="imgP4">
+                                </a>
+                                </div>
+                            </div>
+                            <div class="innerBox2">
+                                <p class="prizeName">Logitech G G502 LIGHTSPEED 粉 x5</p>
+                                <div><a href="https://www.logitechg.com/zh-tw/products/gaming-mice/g502-lightspeed-wireless-gaming-mouse.910-007217.html?srsltid=AfmBOoplvfJo7riRPhGBtrLjXPTZ4ldIbhl8iGb6bZMJMfv1acU32_jT" target="_blank">
+                                    <img class="prizeImg" id="imgP5">
+                                </a>
+                                </div>
+                            </div>
+                            <div class="innerBox2">
+                                <p class="prizeName">Logitech G G515 TKL 黑 x2</p>
+                                <div><a href="https://store.logitech.tw/products/logitech-g-g515-%E8%BC%95%E8%96%84%E6%9C%89%E7%B7%9A%E6%A9%9F%E6%A2%B0%E5%BC%8F-tkl-%E9%9B%BB%E7%AB%B6%E9%8D%B5%E7%9B%A4?srsltid=AfmBOooeYDVaDkbQe19mV25UdxeIofb0oX-YvAuB1t7ra95lM9pWJ-Um" target="_blank">
+                                    <img class="prizeImg" id="imgP6">
+                                </a>
+                                </div>
+                            </div>
+                            <div class="innerBox2">
+                                <p class="prizeName">《聯盟戰棋》鵝鵝騎士 絨毛公仔 x2</p>
+                                <div>
+                                    <img class="prizeImg" id="imgP7">
+                                </div>
+                            </div>
+                            <div class="innerBox2">
+                                <p class="prizeName">《聯盟戰棋》我是犽宿！鵝鵝騎士 絨毛公仔 x2</p>
+                                <div>
+                                    <img class="prizeImg" id="imgP8">
+                                </div>
+                            </div>
+                            <div class="innerBox2">
+                                <p class="prizeName">《聯盟戰棋》澳門公開賽主題T恤 x12</p>
+                                <div>
+                                    <img class="prizeImg" id="imgP9">
+                                </div>
+                            </div>
+                            <div class="innerBox2">
+                                <p class="prizeName">《聯盟戰棋》鵝鵝騎士 絨毛帽子 x3</p>
+                                <div>
+                                    <img class="prizeImg" id="imgP10">
+                                </div>
+                            </div>
+                            <div class="innerBox2">
+                                <p class="prizeName">《聯盟戰棋》鑰匙扣 (星使貓、怒角羊) x4</p>
+                                <div>
+                                    <img class="prizeImg" id="imgP11">
+                                </div>
+                            </div>
+                            <div class="innerBox2">
+                                <p class="prizeName">花輪專屬抱枕 x20</p>
+                                <div><a href="https://www.facebook.com/Gearbaby1010/photos/pb.100044232169415.-2207520000/1024600674348975/?type=3" target="_blank">
+                                    <img class="prizeImg" id="imgP12">
+                                </a>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+            <img src="image/hey.png" id="hey">
+
+
+            
+            <div class="imgBtn2">
+                <img src="image/draw1.png" id="gacha1">
+                <div id="rst1" title="抽獎結果">
+                    <div class="innerBox3">
+                        <p id="rstName" class="prizeName"></p>
+                        <div>
+                                <img id="rstImg" class="rstImg3">
+                        </div>
+                    </div>
+                </div>
+
+                <img src="image/draw10.png" id="gacha10">
+
+                <div id="rstBox" title="抽獎結果">
+                    <div id="innerBox">
+                        <div class="innerBox4">
+                            <p class="prizeName rstName2"></p>
+                            <div>
+                                <img class="rstImg2" id="rstimg10_0">
+                            </div>
+                        </div>
+                        <div class="innerBox4">
+                            <p class="prizeName rstName2"></p>
+                            <div>
+                                <img class="rstImg2" id="rstimg10_1">
+                            </div>
+                        </div>
+                        <div class="innerBox4">
+                            <p class="prizeName rstName2"></p>
+                            <div>
+                                <img class="rstImg2" id="rstimg10_2">
+                            </div>
+                        </div>
+                        <div class="innerBox4">
+                            <p class="prizeName rstName2"></p>
+                            <div>
+                                <img class="rstImg2" id="rstimg10_3">
+                            </div>
+                        </div>
+                        <div class="innerBox4">
+                            <p class="prizeName rstName2"></p>
+                            <div>
+                                <img class="rstImg2" id="rstimg10_4">
+                            </div>
+                        </div>
+                        <div class="innerBox4">
+                            <p class="prizeName rstName2"></p>
+                            <div>
+                                <img class="rstImg2" id="rstimg10_5">
+                            </div>
+                        </div>
+                        <div class="innerBox4">
+                            <p class="prizeName rstName2"></p>
+                            <div>
+                                <img class="rstImg2" id="rstimg10_6">
+                            </div>
+                        </div>
+                        <div class="innerBox4">
+                            <p class="prizeName rstName2"></p>
+                            <div>
+                                <img class="rstImg2" id="rstimg10_7">
+                            </div>
+                        </div>
+                        <div class="innerBox4">
+                            <p class="prizeName rstName2"></p>
+                            <div>
+                                <img class="rstImg2" id="rstimg10_8">
+                            </div>
+                        </div>
+                        <div class="innerBox4">
+                            <p class="prizeName rstName2"></p>
+                            <div>
+                                <img class="rstImg2" id="rstimg10_9">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            
+            
+            </div>
+        </div>
+            
+
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="jquery-ui-1.13.2.custom/jquery-ui.js"></script>
+        <script src="effect.js"></script>
+    </body>
+</html>
