@@ -1,24 +1,47 @@
 body{
     margin: 0;
     background-color: RGB(71,37,133);
+    overflow: hidden;
 }
 
 #mainBody{
     width:80%;
+    height: 100vh;
     padding: 0;
     margin: 0 auto;
+    overflow: hidden;
+    background-color: white;
+    background-image: url(image/background.png);
+    background-position: center;
+    background-size:auto;
+    background-repeat: no-repeat;
 }
 
-#gear{
-    height: 100%;
+#BBlock1{
+    width: 10%;
+    height: 100vh;
     position: absolute;
-    left: 26%;
-    bottom: 0;
+    top: 0%;
+    left: 0%;
+    background-color: RGB(71,37,133);
+    z-index: 20;
 }
 
-#mainBackground{
-    width: 100%;
+#BBlock2{
+    width: 10%;
+    height: 100vh;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    background-color: RGB(71,37,133);
+    z-index: 20;
 }
+
+.gearr{
+    position: absolute
+}
+
+
 
 #shop{
     position:absolute;
@@ -70,10 +93,10 @@ body{
 }
 
 .imgBtn2{
-    position: relative;
-    width: 30%;
-    top: -150px;
-    left: 80px;
+    position: absolute;
+    width: 25%;
+    bottom: 5%;
+    left: 15%;
 }
 
 #gacha1{
@@ -183,27 +206,33 @@ body{
 }
 
 #videoBox{
-    z-index: 100;
+    z-index: 99;
     position: absolute;
 }
 
-@media screen and (max-width: 1000px){
+#opening{
+    z-index: 100;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+@media screen and (max-width: 1024px){
+    body{
+        overflow: scroll;
+    }
+
     #mainBody{
         width: 100%;
+        overflow:scroll;
     }
 
-    #mainBackground{
-        display: none;
-    }
-
-    #gear{
-        width: 100%;
-        position: static;
-    }
 
     #prizeList{
-        position: static;
-        width: 100%;
+        top: 0%;
+        left: 63%;
+        width: 35%;
         border: 5px solid black;
     }
 
@@ -223,4 +252,15 @@ body{
         display: none;
     }
 
+    .gearr{
+        display: none;
+    }
+
+    #BBlock1{
+        display: none;
+    }
+
+    #BBlock2{
+        display: none;
+    }
 }
