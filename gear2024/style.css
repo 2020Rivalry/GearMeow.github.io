@@ -37,44 +37,17 @@ body{
     z-index: 20;
 }
 
+#send{
+    position: absolute;
+    font-size: larger;
+    right: 15%;
+    bottom: 2%;
+}
+
 .gearr{
     position: absolute
 }
 
-
-
-#shop{
-    position:absolute;
-    width: 500px;
-    height: 60%;
-    right: 10%;
-    bottom: 0;
-}
-
-#dialog1{
-    position: absolute;
-    width: 180px;
-    height: 50px;
-    top: 10%;
-    left: 5%;
-    background-color: black;
-}
-
-#shop2020{
-    position:absolute;
-    width: 100%;
-    right: 0;
-    bottom: 0;
-}
-
-#stoneCount{
-    position: absolute;
-    right: 12%;
-    top: 5%;
-    width: 450px;
-    height: 100px;
-    background-color: antiquewhite;
-}
 
 #prizeList{
     position: absolute;
@@ -228,6 +201,12 @@ body{
         overflow:scroll;
     }
 
+    #send{
+        writing-mode: vertical-lr;
+        top: 22%;
+        left: 1%;
+    }
+
 
     #prizeList{
         top: 0%;
@@ -263,4 +242,5 @@ body{
     #BBlock2{
         display: none;
     }
+
 }
