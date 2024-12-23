@@ -74,8 +74,6 @@ $(function(){
 var playop = document.getElementById('openingvideo');
 var opening = document.getElementById('opening');
 if(window.innerWidth>1024){
-    
-
     function playopening(){
     var wid = window.innerWidth;
     opening.style.display = 'block';
@@ -317,15 +315,6 @@ function gearCCC4(){
 
 var gearmove4 = window.setTimeout('gearCCC4()', gearSpeed4);
 
-//2020買俗頭
-$('#shop2020').on('mouseover', function(){
-    $('#dialog1').show(300);
-});
-
-$('#shop2020').on('mouseout', function(){
-    $('#dialog1').hide(300);
-});
-
 
 
 
@@ -430,7 +419,6 @@ $('#gacha1').on('click', function(){
 
     window.setTimeout('showRst()',6100);
 
-    //$('#rst1').dialog('open');
 });
 
 function showRst(){
@@ -505,7 +493,6 @@ $('#gacha10').on('click', function(){
     }
 
     window.setTimeout('showRst2()',6100);
-    //$('#rstBox').dialog('open');
 });
 
 function showRst2(){
