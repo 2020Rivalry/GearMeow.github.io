@@ -71,7 +71,7 @@ $(function(){
     });
 });
 
-var playop = document.getElementById('openingvideo');
+/*var playop = document.getElementById('openingvideo');
 var opening = document.getElementById('opening');
 function playopening(){
     var wid = window.innerWidth;
@@ -96,7 +96,37 @@ if(window.innerWidth>1024){
 else{
     Offop();
 }
+*/
 
+var playop = document.getElementById('openingvideo');
+var opening = document.getElementById('opening');
+function playopening(){
+    var wid = window.innerWidth;
+    opening.style.display = 'block';
+    playop.setAttribute('width',wid);
+    playop.setAttribute('src','image/opening.mp4');
+    playop.setAttribute('autoplay','true');
+    }
+
+    function Offop(){
+    opening.style.display = 'none';
+    playop.removeAttribute('src','image/opening.mp4');
+    playop.removeAttribute('width');
+    playop.removeAttribute('autoplay','true');
+    }
+$('#enterimg').on('mouseover', function(){
+    $('#enterimg').attr({src:'image/gif01.gif'});
+});
+
+$('#enterimg').on('mouseout', function(){
+    $('#enterimg').attr({src:'image/stable.png'});
+});
+
+$('#enterimg').on('click', function(){
+    $('#enter').css('display' , 'none');
+    playopening();
+    playop.onended = Offop;
+});
 
 //gear移動 0------------------------------------------------------------
 //隨機樣式
