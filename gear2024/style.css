@@ -17,6 +17,26 @@ body{
     background-repeat: no-repeat;
 }
 
+#enter{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 101;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+#enterimg{
+    width: 20%;
+}
+
+#enterimg:hover{
+    cursor: pointer;
+}
+
+
 #BBlock1{
     width: 10%;
     height: 100vh;
@@ -243,4 +263,11 @@ body{
         display: none;
     }
 
+    #enter{
+        display: none;
+    }
+
+    #opening{
+        display: none;
+    }
 }
