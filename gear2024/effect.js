@@ -73,8 +73,7 @@ $(function(){
 
 var playop = document.getElementById('openingvideo');
 var opening = document.getElementById('opening');
-if(window.innerWidth>1024){
-    function playopening(){
+function playopening(){
     var wid = window.innerWidth;
     opening.style.display = 'block';
     playop.setAttribute('width',wid);
@@ -88,18 +87,16 @@ if(window.innerWidth>1024){
     playop.removeAttribute('width');
     playop.removeAttribute('autoplay','true');
     }
+
+if(window.innerWidth>1024){
     playopening();
-    window.setTimeout('Offop()',4200);
+    playop.onended = Offop;
+    //window.setTimeout('Offop()',4200);
 }
 else{
-    function Offop(){
-        opening.style.display = 'none';
-        playop.removeAttribute('src','image/opening.mp4');
-        playop.removeAttribute('width');
-        playop.removeAttribute('autoplay','true');
-        }
     Offop();
 }
+
 
 //gear移動 0------------------------------------------------------------
 //隨機樣式
@@ -328,6 +325,7 @@ $('#prizeList').on('click', function(){
 //抽獎結果
 var playVideo = document.getElementById('drawVideo');
 var videoBox = document.getElementById('videoBox');
+var wrst;
 
 function playVdo(){
     var wid = window.innerWidth;
@@ -345,7 +343,9 @@ function OffVdo(){
     playVideo.removeAttribute('src','image/gachaVideo.mp4');
     playVideo.removeAttribute('width');
     playVideo.removeAttribute('autoplay','true');
-
+    if(wrst == 1) showRst();
+    if(wrst == 10) showRst2();
+    wrst = 0;
 }
 
 
@@ -357,10 +357,10 @@ $('#gacha1').on('click', function(){
     var drawNum = Math.floor(100*Math.random());
     var rstName = document.getElementById('rstName');
     console.log(drawNum);
-
+    wrst = 1 ;
 
     playVdo();
-    window.setTimeout('OffVdo()',6100);
+    //window.setTimeout('OffVdo()',6100);
 
 
 
@@ -417,7 +417,8 @@ $('#gacha1').on('click', function(){
         $('#rstImg').attr({src:'image/DONE/gearpillow.png'});
     }
 
-    window.setTimeout('showRst()',6100);
+    playVideo.onended = OffVdo;
+    //window.setTimeout('showRst()',6100);
 
 });
 
@@ -429,9 +430,10 @@ $('#gacha10').on('click', function(){
     var drawNum = Math.floor(100*Math.random());
     var rstNameArray = document.getElementsByClassName('rstName2');
     var rstImg2 = document.getElementsByClassName('rstImg2');
+    wrst = 10;
 
     playVdo();
-    window.setTimeout('OffVdo()',6100);
+    //window.setTimeout('OffVdo()',6100);
 
     for(var i=0;i<10;i++){
         var drawNum = Math.floor(100*Math.random());
@@ -492,7 +494,8 @@ $('#gacha10').on('click', function(){
 
     }
 
-    window.setTimeout('showRst2()',6100);
+    playVideo.onended = OffVdo;
+    //window.setTimeout('showRst2()',6100);
 });
 
 function showRst2(){
